@@ -41,7 +41,7 @@ function serverHandler(request, response) {
     config = getValuesFromConfigJson(jsonPath);
     config = getBashParameters(config, BASH_COLORS_HELPER);
 
-    response.writeHead(302, {Location: `https://192.168.1.83:82/liveAuction/`});
+    response.writeHead(302, {Location: `https://192.168.1.83:84/liveAuction/`});
     response.write('RTCMultiConnection Socket.io Server.\n\n' + 'https://github.com/muaz-khan/RTCMultiConnection-Server\n\n' + 'npm install RTCMultiConnection-Server');
     
     response.end();
